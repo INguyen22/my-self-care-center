@@ -18,6 +18,10 @@ body {
   background-attachment: fixed;
 }
 
+.hidden {
+  display: none;
+}
+
 h1 {
   font-family: 'Quicksand', sans-serif;
   color: white;
@@ -110,7 +114,22 @@ button {
   margin: 60px;
 }
 
+.paragraph{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
 img {
   height: 70px;
   width: 70px;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
