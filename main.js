@@ -17,6 +17,14 @@ function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
 
+function hiddenProperties() {
+  recieveMessageButton.classList.add('hidden')
+  bellImage.classList.add('hidden')
+  paragraph.classList.remove('hidden')
+  clearPageButton.classList.remove('hidden')
+  loadingAnimation.classList.add('hidden')
+}
+
 function recieveMessageOnClick(event) {
   event.preventDefault()
   setTimeout(recieveMessage, 2000)
@@ -25,29 +33,19 @@ function recieveMessageOnClick(event) {
 }
 
 function recieveMessage() {
-
-if (affirmationInput.checked === true) {
-  paragraph.innerText = affirmation[getRandomIndex(affirmation)]
-
-  bellImage.classList.add('hidden')
-  paragraph.classList.remove('hidden')
-  clearPageButton.classList.remove('hidden')
-  loadingAnimation.classList.add('hidden')
-  body.style.background = "linear-gradient(#FFB6C1 40%, #FFE4E1, #F8F8FF) no-repeat"
+  if (affirmationInput.checked === true) {
+    paragraph.innerText = affirmation[getRandomIndex(affirmation)]
+    hiddenProperties()
+    body.style.background = "linear-gradient(#FFB6C1 40%, #FFE4E1, #F8F8FF) no-repeat"
 }
-else if (mantraInput.checked === true) {
-  paragraph.innerText = mantra[getRandomIndex(mantra)]
-
-  bellImage.classList.add('hidden')
-  paragraph.classList.remove('hidden')
-  clearPageButton.classList.remove('hidden')
-  loadingAnimation.classList.add('hidden')
-  body.style.background = "linear-gradient(#228B22 40%, #8FBC8F, #F8F8FF) no-repeat"
+  else if (mantraInput.checked === true) {
+    paragraph.innerText = mantra[getRandomIndex(mantra)]
+    hiddenProperties()
+    body.style.background = "linear-gradient(#228B22 40%, #8FBC8F, #F8F8FF) no-repeat"
 }
-else
-alert("Please select what kind of message you want")
-loadingAnimation.classList.add('hidden')
-clearPageButton.classList.remove('hidden')
+  else if (!alert("Please select what kind of message you want")) {
+   location.reload()
+  }
 }
 
 function refreshPage() {

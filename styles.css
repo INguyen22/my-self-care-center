@@ -46,6 +46,7 @@ h4 {
   border: none;
   border-radius: 10px;
 }
+
 form {
   display: flex;
   align-items: center;
@@ -194,7 +195,7 @@ p {
         width: 100%;
         max-width: 1300px;
         padding: 0;
-    }
+}
 
 @media screen and (max-width: 480px) {
     .view-message {
@@ -203,4 +204,4 @@ p {
         width: 100%;
         max-width: 1300px;
         padding: 0;
-        }
+}
