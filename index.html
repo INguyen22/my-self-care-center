@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <title>Self Care Center</title>
   </head>
   <body>
-  
+
+    <section class='header'>
+      <h1>&#128151 Self Care Center &#128151</h1>
+    </section>
+
+    <section class='question'>
+      <h4>which type of message?</h4>
+    </section>
+
+    <section class='form-box'>
+      <img class="kirby hidden" id="kirbo" src="./assets/sleepingKirby.png">
+      <form>
+        <section class='radio-inputs'>
+          <section class='affirmation-radio'>
+            <input type="radio" id="affirmation"
+            name="message-type" value="affirmation">affirmation
+          </input>
+          </section>
+          <section class='mantra-radio'>
+            <input type="radio" id="mantra"
+            name="message-type" value="mantra">mantra
+          </input>
+          </section>
+        </section>
+        <section class='recieve-button'>
+          <button class="button" id="recieve">Receive Message</button>
+        </section>
+      </form>
+    </section>
+
+  <section class="view-message">
+    <img id="bellIcon" src="./assets/meditate.svg">
+      <section class="paragraph">
+        <p class="message hidden">
+          This is where your quote will be
+        </p>
+      </section>
+  </section>
+
+  <section class='clear-button'>
+    <button class="button hidden" id="clear">Clear</button>
+  </section>
+
+  <section class="loader hidden"></section>
+
     <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="affirmation-mantra.js"></script>
   </body>
 </html>
