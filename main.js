@@ -1,4 +1,5 @@
-var recieveMessageButton = document.querySelector('button')
+var recieveMessageButton = document.querySelector('#recieve')
+var clearPageButton = document.querySelector('#clear')
 
 var affirmationInput = document.getElementById('affirmation')
 var mantraInput = document.getElementById('mantra')
@@ -9,6 +10,7 @@ var paragraph = document.querySelector('p')
 
 
 recieveMessageButton.addEventListener('click', recieveMessage)
+//clearPageButton.addEventListener('click', refreshPage)
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
@@ -21,11 +23,13 @@ if (affirmationInput.checked === true) {
 
   bellImage.classList.add('hidden')
   paragraph.classList.remove('hidden')
+  clearPageButton.classList.remove('hidden')
 }
 else if (mantraInput.checked === true) {
   paragraph.innerText = mantra[getRandomIndex(mantra)]
   bellImage.classList.add('hidden')
   paragraph.classList.remove('hidden')
+  clearPageButton.classList.remove('hidden')
 }
 else
 alert("Please select what kind of message you want")

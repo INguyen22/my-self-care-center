@@ -90,7 +90,7 @@ form {
   //margin-bottom:20px;
 }
 
-button {
+#recieve {
   font-family: 'Quicksand', sans-serif;
   background: #134d71;
   border: none;
@@ -132,4 +132,23 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+}
+
+.clear-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  //margin-bottom:20px;
+}
+
+#clear {
+  font-family: 'Quicksand', sans-serif;
+  background: #134d71;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px black;
+  color: white;
+  font-size: 12px;
+  padding: 5px 5px;
 }
