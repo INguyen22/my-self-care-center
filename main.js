@@ -4,7 +4,7 @@ var clearPageButton = document.querySelector('#clear')
 var affirmationInput = document.getElementById('affirmation')
 var mantraInput = document.getElementById('mantra')
 
-
+var body = document.querySelector('body')
 var bellImage = document.querySelector('img')
 var paragraph = document.querySelector('p')
 var loadingAnimation = document.querySelector('.loader')
@@ -33,6 +33,7 @@ if (affirmationInput.checked === true) {
   paragraph.classList.remove('hidden')
   clearPageButton.classList.remove('hidden')
   loadingAnimation.classList.add('hidden')
+  body.style.background = "linear-gradient(#FFB6C1 40%, #FFE4E1, #F8F8FF) no-repeat"
 }
 else if (mantraInput.checked === true) {
   paragraph.innerText = mantra[getRandomIndex(mantra)]
@@ -41,6 +42,7 @@ else if (mantraInput.checked === true) {
   paragraph.classList.remove('hidden')
   clearPageButton.classList.remove('hidden')
   loadingAnimation.classList.add('hidden')
+  body.style.background = "linear-gradient(#228B22 40%, #8FBC8F, #F8F8FF) no-repeat"
 }
 else
 alert("Please select what kind of message you want")
