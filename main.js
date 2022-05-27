@@ -10,7 +10,7 @@ var paragraph = document.querySelector('p')
 
 
 recieveMessageButton.addEventListener('click', recieveMessage)
-//clearPageButton.addEventListener('click', refreshPage)
+clearPageButton.addEventListener('click', refreshPage)
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
@@ -33,4 +33,8 @@ else if (mantraInput.checked === true) {
 }
 else
 alert("Please select what kind of message you want")
+}
+
+function refreshPage() {
+  location.reload()
 }
