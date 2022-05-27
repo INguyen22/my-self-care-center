@@ -101,6 +101,12 @@ form {
   padding: 5px 5px
 }
 
+#recieve:hover {
+  background-color: #a862ea;
+  transform: scale(1.075);
+  transition: 0.2s ease-in
+}
+
 .view-message {
   display:flex;
   align-items: center;
@@ -151,6 +157,12 @@ p {
   color: white;
   font-size: 12px;
   padding: 5px 5px;
+}
+
+#clear:hover {
+  background-color: #a862ea;
+  transform: scale(1.075);
+  transition: 0.2s ease-in
 }
 
 .loader {
