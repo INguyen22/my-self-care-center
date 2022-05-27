@@ -5,10 +5,12 @@ var affirmationInput = document.getElementById('affirmation')
 var mantraInput = document.getElementById('mantra')
 
 var body = document.querySelector('body')
-var bellImage = document.querySelector('img')
+var bellImage = document.getElementById('bellIcon')
 var paragraph = document.querySelector('p')
 var loadingAnimation = document.querySelector('.loader')
-
+var question = document.querySelector('h4')
+var form = document.querySelector('form')
+var kirby = document.querySelector('.kirby')
 
 recieveMessageButton.addEventListener('click', recieveMessageOnClick)
 clearPageButton.addEventListener('click', refreshPage)
@@ -23,6 +25,10 @@ function hiddenProperties() {
   paragraph.classList.remove('hidden')
   clearPageButton.classList.remove('hidden')
   loadingAnimation.classList.add('hidden')
+  question.classList.add('hidden')
+  form.classList.add('hidden')
+  kirby.classList.remove('hidden')
+  //formBox.style.display('hidden')
 }
 
 function recieveMessageOnClick(event) {
