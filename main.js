@@ -28,7 +28,6 @@ function hiddenProperties() {
   question.classList.add('hidden')
   form.classList.add('hidden')
   kirby.classList.remove('hidden')
-  //formBox.style.display('hidden')
 }
 
 function recieveMessageOnClick(event) {
