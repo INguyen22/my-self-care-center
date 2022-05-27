@@ -152,3 +152,21 @@ p {
   font-size: 12px;
   padding: 5px 5px;
 }
+
+@media screen and (max-width: 960px) {
+    .form-box {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+@media screen and (max-width: 960px) {
+    .view-message {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+        }
